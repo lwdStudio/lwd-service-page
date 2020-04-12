@@ -1,7 +1,7 @@
-# ist263-spring-2020
-This repo is about my class work for IST 263: Intro, to Front-End Web Development class in iSchool@Syracuse University.
+# lwd-service-page
+This page is created during my class work for IST 263: Intro, to Front-End Web Development class in iSchool@Syracuse University. for more information, refer to https://github.com/liduan-su/ist263-spring-2020
 ## What is it?
-This is the class code file for the IST 263 course in Syracuse University
+This is a webpage for my own use for navigate to different services in one stop.
 ## What programing language I use or learn here?
 - HTML, this is basically I learn from the class
 - CSS
