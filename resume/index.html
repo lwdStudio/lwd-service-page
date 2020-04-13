@@ -4,9 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="../css/style.css" rel="stylesheet">
+        <!--Google Fonts-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/546cc904e7.js" crossorigin="anonymous"></script>        
+        <!--BootStrap4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!--RemixIcon-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+
+        <link href="../css/style.css" rel="stylesheet">
+
         <title>Resume - This is Liwen Duan</title>
     </head>    
     <body> 
@@ -17,131 +28,148 @@
                 </div>
             </header>
         </div>
-        <div class="page-container row">
-            <div class="col-1">
-                    <aside class="fixed">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 padding">
+                    <aside class="fixed background-light padding">
                         <img src="../img/profile.jpg" alt="Liwen Duan's selfie" style="height: 200px;" >
                         <h2>Liwen Duan</h2>
-                        <ul style="list-style-type: none;">
+                        <ul style="list-style-type: none; padding-left: 0;">
                             <li><i class="fas fa-phone-alt"></i> <a href="tel:+13154504201">(315)450-4201</a></li>
                             <li><i class="fas fa-envelope"></i> <a href="mailto:liduan@syr.edu">liduan@syr.edu</a></li>
-                            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lwd">Visit my Linkedin</a></li>
+                            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lwd">My Linkedin</a></li>
                         </ul>
 
-                        <nav>
-                            <a href="#about">About</a><br>
-                            <a href="#education">Education</a><br>
-                            <a href="#experience">Experience</a><br>
-                            <a href="#project">Project</a><br>
-                            <a href="#skill">Skill</a><br>
+                        <nav id="resume-nav" class="nav">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#education">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#experience">Experience</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#project">Project</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#skill">Skill</a>
+                                </li>                                
+                            </ul>
                         </nav>
                     </aside>
+                </div>
+                <div class="col-lg padding position-relative" data-spy="scroll" data-target="#resume-nav">
+                    <h2 id="about">About Me</h2>
+                    <p>I am a international student study in iSchool@Syracuse Unviersity persuing a undergraduate degree
+                        learning about how to utilize information technology to change our world. I believe IT is the trend of development right now and it will be the future. With good technology, it will help many people to make some good decisions and help them to succeed in their careers.
+                    </p>
+                    <p> I have some interest in the field of new media or digital media as well since I had work in students' TV station during high school period. The Internet provides a platform where people are able to express their thought on something, share the idea with others. People tend to generate great content. I think a combination of 'cultural and creative industry' and 'information technology' will lead to a new brilliant market for the future. 
+                    </p>
+                    
+                    <h2 id="education">Education</h2>
+                        <h3>Syracuse University</h3>
+                        <p>
+                            School of Information Studies<span class="date" style="float: right;"> Aug 2018 - Present </span> <br>
+                            B.S. Information Management & Technology
+                        </p>
+                    
+                    <h2 id="experience">Experience</h2>
+                    <div id="work-1">
+                        <h3>Undergraduate Teaching Assistant</h3>
+                        <p>
+                            <span class="syracuse">Syracuse University</span>, School of Information Studies
+                            <span class="date" style="float: right;"> Sept 2019 - Dec 2019 </span>
+                        </p>
+                        <ul>
+                            <li>Prepared and Evaluated weekly lab session to ensure lab quality and accuracy</li>
+                            <li>Provided assistant to 100+ student has problems to use software like Cisco Packet Tracer, Linux, Wireshark, Vsphere during lab</li>
+                            <li>Tutored 100+ students with a better understanding of the networking concepts.</li>
+                            <li>Composed step by step lab instruction to guide students to finish their assignments.</li>
+                        </ul>
+                    </div>
+    
+                    <div id="work-2">
+                        <h3>Intership</h3>
+                        <p>
+                            Beijing 7D Vision Technology Inc.
+                            <span class="date" style="float: right;"> Jun 2016 - Jul 2016 </span>                  
+                        </p>
+                        <ul>
+                            <li>Helped analyzed the advantages and disadvantages of the company's competitor's products</li>
+                            <li>Conducted exploratory research on the market.</li>
+                            <li>Learned the SWOT analysis from this experience.</li>
+                        </ul>
+                    </div>
+    
+                    <div id="work-3">
+                        <h3>Director at LuheITV</h3>
+                        <p>
+                            Beijing Luhe International Academy
+                            <span class="date" style="float: right;"> Sep 2014 – Jun 2016 </span>                  
+                        </p>
+                        <ul>
+                            <li>Supervised on program production</li>
+                            <li>Organized and assisted member in the team to make some short video.</li>
+                            <li>Provided technical support for post-production.</li>
+                        </ul>
+                        <p><a class="content" href="detail/luhe-i-tv.html">Learn More</a></p>
+                    </div>
+    
+                    <h2 id="project">Project</h2>
+                        <div id="project-1">
+                            <p>
+                                "The Way to Airborne" - Mini film project
+                                <span class="date" style="float: right;"> May 2015 </span>    
+                            </p>
+                            <ul>
+                                <li>Supervised on film's production</li>
+                                <li>Organized and assisted a 5 member team to film the footage we need.</li>
+                                <li>Provided technical support for video post-production.</li>
+                            </ul>
+                        </div>
+                    <h2 id="skill">Skill</h2>
+                    <h3>Programming language Skill</h3>
+                    <table>
+                        <tr>
+                            <td><i class="fab fa-python fa-3x" title="Python"></i></td>
+                            <td><i class="fab fa-html5 fa-3x" title="HTML5"></i></td>
+                            <td><i class="fab fa-css3-alt fa-3x" title="CSS3"></i></td>
+                            <td><i class="fab fa-java fa-3x" title="Java"></i></td>
+                        </tr>
+                    </table>
+                    <h3>System</h3>
+                    <table>
+                        <tr>
+                            <td><i class="fab fa-ubuntu fa-3x" title="Ubuntu"></i></td>
+                            <td><i class="fab fa-windows fa-3x" title="Windows"></i></td>
+                            <td><i class="fab fa-apple fa-3x" title="macOS"></i></td>
+                        </tr>
+                    </table>
+    
+                    <h3>Application</h3>
+                    <table>
+                        <tr>
+                            <td><i class="fab fa-wordpress fa-3x" title="WordPress"></i></td>
+                            <td><i class="fab fa-adobe fa-3x" title="Adobe Creative Cloud"></i></td>
+                        </tr>
+                    </table>
+    
+                </div>
             </div>
 
             <main style="flex: 3;">
-                <h2 id="about">About Me</h2>
-                <p>I am a international student study in iSchool@Syracuse Unviersity persuing a undergraduate degree
-                    learning about how to utilize information technology to change our world. I believe IT is the trend of development right now and it will be the future. With good technology, it will help many people to make some good decisions and help them to succeed in their careers.
-                </p>
-                <p> I have some interest in the field of new media or digital media as well since I had work in students' TV station during high school period. The Internet provides a platform where people are able to express their thought on something, share the idea with others. People tend to generate great content. I think a combination of 'cultural and creative industry' and 'information technology' will lead to a new brilliant market for the future. 
-                </p>
-                
-                <h2 id="education">Education</h2>
-                    <h3>Syracuse University</h3>
-                    <p>
-                        School of Information Studies<span class="date" style="float: right;"> Aug 2018 - Present </span> <br>
-                        B.S. Information Management & Technology
-                    </p>
-                
-                <h2 id="experience">Experience</h2>
-                <div id="work-1">
-                    <h3>Undergraduate Teaching Assistant</h3>
-                    <p>
-                        <span class="syracuse">Syracuse University</span>, School of Information Studies
-                        <span class="date" style="float: right;"> Sept 2019 - Dec 2019 </span>
-                    </p>
-                    <ul>
-                        <li>Prepared and Evaluated weekly lab session to ensure lab quality and accuracy</li>
-                        <li>Provided assistant to 100+ student has problems to use software like Cisco Packet Tracer, Linux, Wireshark, Vsphere during lab</li>
-                        <li>Tutored 100+ students with a better understanding of the networking concepts.</li>
-                        <li>Composed step by step lab instruction to guide students to finish their assignments.</li>
-                    </ul>
-                </div>
-
-                <div id="work-2">
-                    <h3>Intership</h3>
-                    <p>
-                        Beijing 7D Vision Technology Inc.
-                        <span class="date" style="float: right;"> Jun 2016 - Jul 2016 </span>                  
-                    </p>
-                    <ul>
-                        <li>Helped analyzed the advantages and disadvantages of the company's competitor's products</li>
-                        <li>Conducted exploratory research on the market.</li>
-                        <li>Learned the SWOT analysis from this experience.</li>
-                    </ul>
-                </div>
-
-                <div id="work-3">
-                    <h3>Director at LuheITV</h3>
-                    <p>
-                        Beijing Luhe International Academy
-                        <span class="date" style="float: right;"> Sep 2014 – Jun 2016 </span>                  
-                    </p>
-                    <ul>
-                        <li>Supervised on program production</li>
-                        <li>Organized and assisted member in the team to make some short video.</li>
-                        <li>Provided technical support for post-production.</li>
-                    </ul>
-                    <p><a class="content" href="detail/luhe-i-tv.html">Learn More</a></p>
-                </div>
-
-                <h2 id="project">Project</h2>
-                    <div id="project-1">
-                        <p>
-                            "The Way to Airborne" - Mini film project
-                            <span class="date" style="float: right;"> May 2015 </span>    
-                        </p>
-                        <ul>
-                            <li>Supervised on film's production</li>
-                            <li>Organized and assisted a 5 member team to film the footage we need.</li>
-                            <li>Provided technical support for video post-production.</li>
-                        </ul>
-                    </div>
-                <h2 id="skill">Skill</h2>
-                <h3>Programming language Skill</h3>
-                <table>
-                    <tr>
-                        <td><i class="fab fa-python fa-3x" title="Python"></i></td>
-                        <td><i class="fab fa-html5 fa-3x" title="HTML5"></i></td>
-                        <td><i class="fab fa-css3-alt fa-3x" title="CSS3"></i></td>
-                        <td><i class="fab fa-java fa-3x" title="Java"></i></td>
-                    </tr>
-                </table>
-                <h3>System</h3>
-                <table>
-                    <tr>
-                        <td><i class="fab fa-ubuntu fa-3x" title="Ubuntu"></i></td>
-                        <td><i class="fab fa-windows fa-3x" title="Windows"></i></td>
-                        <td><i class="fab fa-apple fa-3x" title="macOS"></i></td>
-                    </tr>
-                </table>
-
-                <h3>Application</h3>
-                <table>
-                    <tr>
-                        <td><i class="fab fa-wordpress fa-3x" title="WordPress"></i></td>
-                        <td><i class="fab fa-adobe fa-3x" title="Adobe Creative Cloud"></i></td>
-                    </tr>
-                </table>
 
 
             </main>
     
         </div>
         <footer class="ftStyle">
-            <a class="ft" href="https://www.samduan.cn/copyright">Copyright © 2020 Liwen Duan</a>
-            <a class="ft" href="htts://www.samduan.cn/tc">Terms & Condition</a>
+            <a class="ft" href="https://www.samduan.cn/termscondiction/copyright/">Copyright © 2020 Liwen Duan</a>
+            <a class="ft" href="https://www.samduan.cn/termscondiction/">Terms & Condition</a>
             <a class="ft" href="https://www.samduan.cn/contact/">Contact us</a>
-        </footer>   
-    </body>
+        </footer>    
+</body>
 </html>

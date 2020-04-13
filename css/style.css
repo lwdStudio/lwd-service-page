@@ -1,29 +1,34 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Roboto&display=swap');
-
-.page-container {
-    width: 1200px;
-    margin: 0 auto;
-    background-color: #f5f5f5;
-    padding: 1em;
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC|Noto+Serif|Noto+Serif+SC&display=swap');
+.position-relative {
+    position: relative;
 }
 
-.page-container-center {
-    width: 1200px;
-    margin: 0 auto;
-    background-color: #f5f5f5;
-    padding: 1em;
-    align-items: center;
+.padding {
+    padding: 1em 1.5em 1em;
 }
 
-.content-container {
+.background-light {
+    background-color: #f5f5f5;
+}
+
+.background-white {
+    background-color: #ffffff;
+    margin: 1em;
+}
+
+
+.content {
     width: 800px;
-    margin: 0 auto;
 }
 
-.header {
+.center {
+    text-align: center;
+}
+
+.header-index {
     margin: auto;
     width: 100%;
-    height: 150px;
+    height: 200px;
     padding: 2em;
     background-color: #00796b;
 }
@@ -31,28 +36,30 @@
 .header-nr {
     margin: auto;
     width: 100%;
-    height: 50px;
+    height: 80px;
     padding: 1em;
     background-color: #00796b;
     text-align: left;
 }
 
-h1.h1header{
+h1.index{
     color: #fff;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif SC', 'Noto Serif', serif;
+    font-weight: bold;
     text-align: center;
 }
 
 h2 {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif SC', 'Noto Serif', serif;
+    font-weight: bold;
 }
 
 h3 {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif SC', 'Noto Serif', serif;
+    font-weight: bold;
 }
 
-h3.left-indent {
-    font-family: 'Noto Serif', serif;
+.left-indent {
     margin-left: 1rem;
 }
 
@@ -63,8 +70,8 @@ img.center {
     width: auto;
 }
 
-img.index-logo {
-    max-height: 100px;
+img.logo-index {
+    max-height: 80px;
 }
 
 img.logo{
@@ -73,8 +80,10 @@ img.logo{
 }
 
 .service-icon{
+    padding: 1.5em 0;
+    height: 100px;
+    margin: 1.5em;
     text-align: center;
-    padding: 10px 0;
 }
 
 .red {
@@ -85,11 +94,15 @@ img.logo{
     color: green;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
+.yellow {
+    color: #ff9100;
 }
 
-.row {
+p {
+    font-family: 'Noto Sans SC', 'Noto Sans', sans-serif;
+}
+
+/*.row {
     display: flex;
 }
 
@@ -104,18 +117,18 @@ p {
 .col-1{
     flex: 1;
     padding: 1em;
-}
+}*/
 
 .page-logo-set{
     height: 40px;
-    width: 300px;
+    width: 400px;
     padding: 5px;
     color: #fff;
     font-size: x-large;
 }
 
 a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans SC', 'Noto Sans', sans-serif;
     text-decoration: none;
     font-weight: bold;
     color: #00796b;
@@ -158,20 +171,30 @@ footer.ftStyle {
     background-color: #00796b;
 }
 
+td {
+    height: 100px;
+    padding: 1em;
+    width: 180px;
+    font-size: large;
+}
+
 td.center {
     height: 100px;
     padding: 1em;
     text-align: center;
 }
 
-td {
+td.service-icon{
+    padding: 1.5em 0;
     height: 100px;
-    padding: 1em;
+    width: 200px;
+    margin: 1.5em;
+    text-align: center;
 }
 
 .fixed{
     position: sticky;
-    top: 5%;
+    top: 2%;
 }
 
 img.content{

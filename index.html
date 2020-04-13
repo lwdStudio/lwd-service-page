@@ -4,73 +4,123 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="css/style.css" rel="stylesheet">
+        <!--Google Fonts-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Font Awesome-->
         <script src="https://kit.fontawesome.com/546cc904e7.js" crossorigin="anonymous"></script>        
+        <!--BootStrap4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!--RemixIcon-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <link href="css/style.css" rel="stylesheet">
+        
         <title>This is Liwen Duan's Site</title>
     </head>    
     <body>
-        <div class="header">
+        <div class="header-index">
             <header>
-                <img class="center index-logo" src="img/logo.png" alt="Logo">
-                <h1 class="h1header">This is Liwen Duan's Site</h1>
+                <img class="center logo-index" src="img/logo.png" alt="Logo">
+                <h1 class="index">This is Liwen Duan's Site</h1>
             </header>
     
         </div>
-        <div class="page-container-center">
+        <div class="container padding position-relative background-light">
             <main>
                 <h2>Select a destination site to begin!</h2>
+            </br>
                 <h3 class="left-indent green"><i class="far fa-check-circle"></i> Active</h3>
                 <div class="row">
-                    <div class="col">
+                    <div class="col background-white">
                         <div class="service-icon">
-                            <i class="fas fa-hashtag fa-8x"></i>   
+                            <i class="fas fa-share-alt fa-6x" title="Social media"></i>
                         </div>
                         <a href="social.html"><h3>Social Media</h3></a>
                         <p>Find me on social media platform</p>                 
                     </div>
-                    <div class="col">
+                    <div class="col background-white">
                         <div class="service-icon">
-                            <i class="fas fa-user-circle fa-6x"></i>
+                            <i class="fas fa-user-circle fa-6x" title="Resume"></i>
                         </div>
                         <a href="resume"><h3>Resume</h3></a>
                         <p>To get more information of me</p>
                     </div>
-                    <div class="col">
+                    <div class="col background-white">
                         <div class="service-icon">
-                            <img src="https://camo.githubusercontent.com/9794c1a4206e67fd4aa5a884e6d8487ceb0847ef/68747470733a2f2f7777772e7261696e6c6f6f702e6e65742f7374617469632f696d672f6c6f676f2d323536783235362d74696e792e706e67" alt="rainloop Logo" style="height: 100px;">
+                            <img src="https://camo.githubusercontent.com/9794c1a4206e67fd4aa5a884e6d8487ceb0847ef/68747470733a2f2f7777772e7261696e6c6f6f702e6e65742f7374617469632f696d672f6c6f676f2d323536783235362d74696e792e706e67" alt="rainloop Logo" title="Rainlook Webmail logo" style="height: 100px;">
                         </div>
 
                         <a href="https://mail.samduan.cn/"><h3>Rainloop Webmail</h3></a>
                         <p>Send @samduan.cn's email using this webmail client</p>
                     </div>
                 </div>
-                <h3 class="left-indent red"><i class="fas fa-tools"></i> Maintaining</h3>
                 <div class="row">
-                    <div class="col">
+                    <div class="col background-white">
                         <div class="service-icon">
-                            <img src="https://s.w.org/style/images/about/WordPress-logotype-wmark.png" alt="Wordpress Logo" style="height: 100px;">
+                            <i class="fab fa-wordpress fa-6x" title="WordPress"></i>
                         </div>
-                        <a href="https://www.samduan.cn/"><h3>Wordpress Blog</h3></a>
+                        <a href="https://www.samduan.cn/"><h3>WordPress Blog</h3></a>
                         <p>I use this blog to record some of my view in the US </p>
                     </div>
-                    <div class="col">
+                    <div class="col background-white">
                         <div class="service-icon">
-                            <img src="https://github.com/YOURLS/YOURLS/raw/master/images/yourls-logo.png" alt="yourls Logo" style="height: 100px;">
+                            <img src="https://github.com/YOURLS/YOURLS/raw/master/images/yourls-logo.png" alt="YOURLS Logo" title="YOURLS" style="height: 100px;">
                         </div>
 
-                        <a href="https://go.samduan.cn/admin/"><h3>Short URL Service</h3></a>
-                        <p>To get to other site easily</p>
+                        <a href="https://go.samduan.cn/admin/"><h3>Short URL Service (Admin Panel)</h3></a>
+                        <p>Share URL easily between each other</p>
                     </div>
-                    <div class="col">
-                    </div>   
-                </div>               
+                    <div class="col background-white">
+                        <div class="service-icon">
+                            <img src="https://share.samduan.cn/media/courgette/logo-jirafeau.svg" alt="Jirafeau Logo" title="Jirafeau" style="height: 100px;">
+                        </div>
+
+                        <a href="https://share.samduan.cn/"><h3>File Share Service</h3></a>
+                        <p>Share file easily between each other</p>
+                    </div>
+                </div>
+                <h3 class="left-indent red"><i class="fas fa-tools"></i> Maintaining</h3>
+                <p class="left-indent">
+                    Currently, all site are good and up running!
+                </p>
+                <div class="row">
+                    <!--<div class="col background-white">
+                        <div class="service-icon">
+                            <img src="" alt="" style="height: 100px;">
+                        </div>
+                        <a href=""><h3>service name</h3></a>
+                        <p>description</p>
+                    </div>-->
+                </div>
+                <h3 class="left-indent yellow"><i class="far fa-question-circle"></i> Up coming</h3>
+                <p class="left-indent">
+                    There are no plan for new function yet.
+                </p>
+                <div class="row">
+                    <!--<div class="col background-white">
+                        <div class="service-icon">
+                            <img src="" alt="" style="height: 100px;">
+                        </div>
+                        <a href=""><h3>service name</h3></a>
+                        <p>description</p>
+                    </div>-->
+                </div>
+                <h3 class="left-indent"><i class="fas fa-info-circle"></i>More information and links</h3>
+                <div>
+                    <ul style="list-style: none;">
+                        <li><a href="https://liduan-su.github.io/ist263-spring-2020/"><i class="fas fa-graduation-cap"></i>IST263 Course</a></li>
+                        <li><a href="tools.html"><i class="fas fa-toolbox"></i> Site tools</a></li>
+                    </ul>
+                </div>
             </main>
 
         </div>
             <footer class="ftStyle">
-                <a class="ft" href="https://www.samduan.cn/copyright">Copyright © 2020 Liwen Duan</a>
-                <a class="ft" href="htts://www.samduan.cn/tc">Terms & Condition</a>
+                <a class="ft" href="https://www.samduan.cn/termscondiction/copyright/">Copyright © 2020 Liwen Duan</a>
+                <a class="ft" href="https://www.samduan.cn/termscondiction/">Terms & Condition</a>
                 <a class="ft" href="https://www.samduan.cn/contact/">Contact us</a>
             </footer>    
     </body>
