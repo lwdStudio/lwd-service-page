@@ -71,12 +71,18 @@ img.center {
 }
 
 img.logo-index {
-    max-height: 80px;
+    max-height: 100px;
+    padding: 0.5em;
 }
 
 img.logo{
     width: auto;
     max-height: 40px;
+    padding-right: 0.5em;
+}
+
+img.content{
+    width: 100%;
 }
 
 .service-icon{
@@ -197,6 +203,3 @@ td.service-icon{
     top: 2%;
 }
 
-img.content{
-    height: 400px;
-}
