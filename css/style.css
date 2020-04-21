@@ -92,7 +92,11 @@ img.profile {
 }
 
 img.content{
-    width: 100%;
+    height: 480px;
+}
+
+table.content{
+    width: 80%;
 }
 
 .service-icon{
