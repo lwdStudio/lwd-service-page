@@ -16,16 +16,17 @@
         <!--RemixIcon-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
         <!--Favicon-->
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
         <link rel="manifest" href="/img/favicon/site.webmanifest">
-        <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#c91f37">
+        <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#000000">
         <link rel="shortcut icon" href="/img/favicon/favicon.ico">
-        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="apple-mobile-web-app-title" content="Site Tools for lwdWeb">
+        <meta name="application-name" content="Site Tools for lwdWeb">
+        <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-        
+        <meta name="theme-color" content="#000000">       
         <link href="../css/style.css" rel="stylesheet">
         
         <title>网站工具 Site tools</title>
@@ -33,33 +34,31 @@
     <body>
         <div class="header-nr">
             <header>
-                <nav id="resume-nav" class="navbar navbar-dark bg-transparent">
-                    <a class="navbar-brand" href="index.html" title="Back to Home Page">
-                        <img src="/img/lwd-stamp.png" alt="Logo" width="35" height="35" class="d-inline-block align-top">
-                        | 网站工具 Site tools
-                    </a>
-                </nav>
+                <div class="page-logo-set">
+                    <a class="nostyle" href="/index.html" title="Back to Home Page"><img class="logo" src="img/baseline_build_white_48pt_3x.png" alt="Logo">| 网站工具 Site Tools </a>
+                </div>
             </header>
         </div>
-        <div class="container padding position-relative background-white">
+        <div class="container padding position-relative background-light">
             <main>
                 <h2>查看本地环境</h2>
+            </br>
                 <div class="row">
-                    <div class="col background-light margin">
+                    <div class="col background-white">
                         <div class="service-icon">
                             <i class="fas fa-info-circle fa-6x" title="信息""></i>
                         </div>
                         <a href="http://lwd-cn-tencent-chengdu-1.samduan.cn/p.php"><h3>探针</h3></a>
                         <p>检查网站信息</p>                 
                     </div>
-                    <div class="col background-light margin">
+                    <div class="col background-white">
                         <div class="service-icon">
                             <i class="fab fa-php fa-6x" title="php"></i>
                         </div>
                         <a href="http://lwd-cn-tencent-chengdu-1.samduan.cn/phpinfo.php"><h3>php信息</h3></a>
                         <p>检查网站php信息</p>
                     </div>
-                    <div class="col background-light margin">
+                    <div class="col background-white">
                         <div class="service-icon">
                             <img src="https://www.phpmyadmin.net/static/images/logo.png?067b638aa2a2" alt="phpmyadmin Logo" title="phpmyadmin" style="height: 100px;">
                         </div>
@@ -69,7 +68,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col background-light margin">
+                    <div class="col background-white">
                         <div class="service-icon">
                             <i class="fab fa-centos fa-6x" title="CentOS""></i>
                         </div>
@@ -86,30 +85,12 @@
             </main>
 
         </div>
-        <footer class="ftStyle">
-            <div class="row">
-                <div class="col-md-12 col-xl-auto">
-                    <a class="ft" href="https://www.samduan.cn/termscondiction/copyright/">版权所有 © 2020 Liwen Duan</a>
-                </div>
-                <div class="col-md-12 col-xl-auto">
-                    <a class="ft" href="https://www.samduan.cn/termscondiction/">网页使用条款</a>
-                </div>    
-                <div class="col-md-12 col-xl-auto">
-                    <a class="ft" href="https://www.samduan.cn/contact/">联系我们</a>
-                </div>
-                <div class="col-md-12 col-xl-auto">
-                    <a class="ft" href="https://github.com/pjsd/lwd-service-page"><i class="fab fa-github"></i> 开源网站</a>
-                </div>
-                <div class="col-md-12 col-xl-auto">
-                    <a class="ft" href="choose-language"><i class="fas fa-globe"></i> 切换语言 | Change Language</a>
-                </div>
-                <div class="col-md-12 col-xl-auto">
-                    <a class="ft" href="http://www.beian.miit.gov.cn/">鄂ICP备18006410号-1 <i class="fas fa-external-link-alt"></i></a>
-                </div>    
-                <div class="col-md-12 col-xl-auto">
-                    <a class="ft" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011202001176"><img src="/img/备案图标.png" alt="网安备案图标">京公网安备11011202001176号<i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-        </footer>    
+            <footer class="ftStyle">
+                <a class="ft" href="https://www.samduan.cn/termscondiction/copyright/">版权所有 © 2020 Liwen Duan</a>
+                <a class="ft" href="https://www.samduan.cn/termscondiction/">使用条款</a>
+                <a class="ft" href="https://www.samduan.cn/contact/">联系我们</a>
+                <a class="ft" href="http://www.beian.miit.gov.cn/">鄂ICP备18006410号-1 <i class="fas fa-external-link-alt"></i></a>
+                <a class="ft" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011202001176"><img src="https://service.samduan.cn/img/备案图标.png" alt="网安备案图标"> 京公网安备 11011202001176号 <i class="fas fa-external-link-alt"></i></a>
+            </footer>    
     </body>
 </html>
