@@ -32,14 +32,28 @@
 
         <title>Resume - This is Liwen Duan</title>
     </head>    
-    <body class="position-relative" data-spy="scroll" data-target="#resume-nav" data-offset="100">
-        <div class="header-nr-nav sticky-top">
-            <header>
-                <nav id="resume-nav" class="navbar navbar-dark bg-transparent">
+    <body class="position-relative" data-spy="scroll" data-target="#resume-nav" data-offset="45">
+        <div class="header-nr">
+            <header>            
+                <nav class="navbar navbar-dark bg-transparent">
                     <a class="navbar-brand" href="/index.html" title="Back to Home Page">
                         <img src="/img/lwd-stamp.png" alt="Logo" width="35" height="35" class="d-inline-block align-top">
                         | Resume
                     </a>
+                    <div>
+                        <a class="btn btn-light" href="/index.html" title="Back to Home Page">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <a class="btn btn-light" href="/social.html" title="Social Media">
+                            <i class="fas fa-hashtag"></i>
+                        </a>
+                        <!--
+                        <a class="btn btn-light" href="/resume" title="Resume">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                        -->
+                    </div>
+                    <!--
                     <ul class="nav nav-pills justified-content-end">
                         <li class="nav-item">
                             <a class="nav-link white" href="#about">About</a>
@@ -62,13 +76,51 @@
                             <a class="nav-link white" href="#skill">Skill</a>
                         </li>
                     </ul>
-                </nav>
+
+                    -->
+                </nav> 
             </header>
         </div>
-        <div class="container">
+        <div class="container background-white">
+        <!-- Modal -->
+        <div class="modal fade" id="luheitv-detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Experience while at LuheITV</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body margin">
+                        <h2>What did I do?</h2>            
+                        <p>During this period, I was so lucky to find out this opportunity to join the TV station in my high school. I wasn't aware of my interest on media before. As time goes though, it attract me with more interest. I was learned how to make video content, how do edit it on the computer. I was grow up so quick from not familar with this field at all 'till today I have some knowledge that I was able to help other in the TV station. </p>
+                        <p>I leard many skill from this experience. Using professional software like Adobe Premiere Pro and After Effect, as well as Final Cut Pro on macOS to edit video. I learned how to organize a team to get content in school's event effectly.</p>
+                        <h2>What did I learned</h2>
+                        <ul>
+                            <li>Professional editing tools: Adobe Premiere, After Effect. Final Cut Pro X</li>
+                            <li>Team skill: How to organize team member to get content in a event</li>
+                            <li>Direct and make a own documentary of my own</li>
+                        </ul>
+                        <h2>Past Work Demo stration (content in Chinese)</h2>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe src="//player.bilibili.com/player.html?aid=5084255&cid=8259494&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+                        </div>
+                        <br>
+                        <p>
+                            <a class="content" href="https://www.bilibili.com/video/av5084255"><i class="ri-bilibili-line"></i> View in Bilibili</a>
+                        </p>                    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
             <div class="row">
-                <div class="col-lg-3 col padding">
-                    <aside class="fixed background-light padding top-10 md-center">
+                <div class="col-lg-auto col padding">
+                    <aside class="fixed background-light padding top-2 md-center">
                         <img src="../img/profile.jpg" alt="Liwen Duan's selfie" class="profile">
                         <h2>Liwen Duan</h2>
                         <ul style="list-style-type: none; padding-left: 0;">
@@ -76,144 +128,155 @@
                             <li><i class="fas fa-envelope"></i> <a href="mailto:liduan@syr.edu">liduan@syr.edu</a></li>
                             <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lwd">My Linkedin</a></li>
                         </ul>
-
-                        <!--<nav  class="navbar navbar-light" id="resume-nav">
-                            <ul class="nav nav-pills flex-column">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#education">Education</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#experience">Experience</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#project">Project</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#skill">Skill</a>
-                                </li>                                
-                            </ul>
-                        </nav>-->
+                        <div id="resume-nav" class="list-group bg-transparent card">
+                            <a class="list-group-item list-group-item-action center" href="#about">About</a>
+                            <a class="list-group-item list-group-item-action center" href="#education">Education</a>
+                            <a class="list-group-item list-group-item-action center" data-toggle="collapse" aria-expanded="true" aria-controls="list" data-target="#list" href="#experience">Experience</a>
+                            <div class="collapse show" id="list">
+                                <a class="list-group-item list-group-item-action" href="#work-1">Undergraduate TA</a>
+                                <a class="list-group-item list-group-item-action" href="#work-2">Intership</a>
+                                <a class="list-group-item list-group-item-action" href="#work-3">Director at LuheITV</a>
+                            </div>    
+                            <a class="list-group-item list-group-item-action center" href="#project">Project</a>
+                            <a class="list-group-item list-group-item-action center" href="#skill">Skill</a>
+                        </div>            
                     </aside>
                 </div>
-                <section class="col-lg padding ">
-                    <h2 id="about">About Me</h2>
-                    <p>I am a international student study in iSchool@Syracuse Unviersity persuing a undergraduate degree
-                        learning about how to utilize information technology to change our world. I believe IT is the trend of development right now and it will be the future. With good technology, it will help many people to make some good decisions and help them to succeed in their careers.
-                    </p>
-                    <p> I have some interest in the field of new media or digital media as well since I had work in students' TV station during high school period. The Internet provides a platform where people are able to express their thought on something, share the idea with others. People tend to generate great content. I think a combination of 'cultural and creative industry' and 'information technology' will lead to a new brilliant market for the future. 
-                    </p>
-                    
-                    <h2 id="education">Education</h2>
-                        <h3>Syracuse University</h3>
+
+                <main class="col-lg padding">
+                    <section id="about">
+                        <h2>About Me</h2>
+                        <p>I am a international student study in iSchool@<span class="syracuse">Syracuse University</span> persuing a undergraduate degree
+                            learning about how to utilize information technology to change our world. I believe IT is the trend of development right now and it will be the future. With good technology, it will help many people to make some good decisions and help them to succeed in their careers.
+                        </p>
+                        <p> I have some interest in the field of new media or digital media as well since I had work in students' TV station during high school period. The Internet provides a platform where people are able to express their thought on something, share the idea with others. People tend to generate great content. I think a combination of 'cultural and creative industry' and 'information technology' will lead to a new brilliant market for the future. 
+                        </p>    
+                    </section>
+
+                    <section id="education">
+                        <h2>Education</h2>
+                        <h3 class="syracuse">Syracuse University</h3>
                         <p>
-                            School of Information Studies<span class="date" style="float: right;"> Aug 2018 - Present </span> <br>
+                            School of Information Studies<span class="date" > Aug 2018 - Present </span> <br>
                             B.S. Information Management & Technology
                         </p>
-                    
-                    <h2 id="experience">Experience</h2>
-                    <div id="work-1">
-                        <h3>Undergraduate Teaching Assistant</h3>
-                        <p>
-                            <span class="syracuse">Syracuse University</span>, School of Information Studies
-                            <span class="date" style="float: right;"> Sept 2019 - Dec 2019 </span>
-                        </p>
-                        <ul>
-                            <li>Prepared and Evaluated weekly lab session to ensure lab quality and accuracy</li>
-                            <li>Provided assistant to 100+ student has problems to use software like Cisco Packet Tracer, Linux, Wireshark, Vsphere during lab</li>
-                            <li>Tutored 100+ students with a better understanding of the networking concepts.</li>
-                            <li>Composed step by step lab instruction to guide students to finish their assignments.</li>
-                        </ul>
-                    </div>
-    
-                    <div id="work-2">
-                        <h3>Intership</h3>
-                        <p>
-                            Beijing 7D Vision Technology Inc.
-                            <span class="date" style="float: right;"> Jun 2016 - Jul 2016 </span>                  
-                        </p>
-                        <ul>
-                            <li>Helped analyzed the advantages and disadvantages of the company's competitor's products</li>
-                            <li>Conducted exploratory research on the market.</li>
-                            <li>Learned the SWOT analysis from this experience.</li>
-                        </ul>
-                    </div>
-    
-                    <div id="work-3">
-                        <h3>Director at LuheITV</h3>
-                        <p>
-                            Beijing Luhe International Academy
-                            <span class="date" style="float: right;"> Sep 2014 – Jun 2016 </span>                  
-                        </p>
-                        <ul>
-                            <li>Supervised on program production</li>
-                            <li>Organized and assisted member in the team to make some short video.</li>
-                            <li>Provided technical support for post-production.</li>
-                        </ul>
-                        <p><a class="content" href="detail/luhe-i-tv.html">Learn More</a></p>
-                    </div>
-    
-                    <h2 id="project">Project</h2>
+                    </section>
+
+                    <section id="experience">
+                        <h2>Experience</h2>
+                        <div id="work-1">
+                            <h3>Undergraduate Teaching Assistant</h3>
+                            <p>
+                                <span class="syracuse">Syracuse University</span>, School of Information Studies
+                                <span class="date" > Sept 2019 - Dec 2019 </span>
+                            </p>
+                            <ul>
+                                <li>Prepared and Evaluated weekly lab session to ensure lab quality and accuracy</li>
+                                <li>Provided assistant to 100+ student has problems to use software like Cisco Packet Tracer, Linux, Wireshark, Vsphere during lab</li>
+                                <li>Tutored 100+ students with a better understanding of the networking concepts.</li>
+                                <li>Composed step by step lab instruction to guide students to finish their assignments.</li>
+                            </ul>
+                        </div>
+
+                        <div id="work-2">
+                            <h3>Internship</h3>
+                            <p>
+                                Beijing 7D Vision Technology Inc.
+                                <span class="date" > Jun 2016 - Jul 2016 </span>                  
+                            </p>
+                            <ul>
+                                <li>Helped analyzed the advantages and disadvantages of the company's competitor's products</li>
+                                <li>Conducted exploratory research on the market.</li>
+                                <li>Learned the SWOT analysis from this experience.</li>
+                            </ul>
+                        </div>
+        
+                        <div id="work-3">
+                            <h3>Director at LuheITV</h3>
+                            <p>
+                                Beijing Luhe International Academy
+                                <span class="date" > Sep 2014 – Jun 2016 </span>                  
+                            </p>
+                            <ul>
+                                <li>Supervised on program production</li>
+                                <li>Organized and assisted member in the team to make some short video.</li>
+                                <li>Provided technical support for post-production.</li>
+                            </ul>
+                            <!--Modal activate-->
+                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#luheitv-detail">
+                                Learn More
+                            </button>    
+                        </div>
+                    </section>
+
+                    <br>
+
+                    <section id="project">
+                        <h2>Project</h2>
                         <div id="project-1">
                             <p>
                                 "The Way to Airborne" - Mini film project
-                                <span class="date" style="float: right;"> May 2015 </span>    
+                                <span class="date" > May 2015 </span>    
                             </p>
                             <ul>
                                 <li>Supervised on film's production</li>
                                 <li>Organized and assisted a 5 member team to film the footage we need.</li>
                                 <li>Provided technical support for video post-production.</li>
                             </ul>
+                            &nbsp;
                         </div>
-                    <h2 id="skill">Skill</h2>
-                    <h3>Programming language Skill</h3>
-                    <table>
-                        <tr>
-                            <td><i class="fab fa-python fa-3x" title="Python"></i></td>
-                            <td><i class="fab fa-html5 fa-3x" title="HTML5"></i></td>
-                            <td><i class="fab fa-css3-alt fa-3x" title="CSS3"></i></td>
-                            <td><i class="fab fa-java fa-3x" title="Java"></i></td>
-                        </tr>
-                    </table>
-                    <h3>System</h3>
-                    <table>
-                        <tr>
-                            <td><i class="fab fa-ubuntu fa-3x" title="Ubuntu"></i></td>
-                            <td><i class="fab fa-windows fa-3x" title="Windows"></i></td>
-                            <td><i class="fab fa-apple fa-3x" title="macOS"></i></td>
-                        </tr>
-                    </table>
-    
-                    <h3>Application</h3>
-                    <table>
-                        <tr>
-                            <td><i class="fab fa-wordpress fa-3x" title="WordPress"></i></td>
-                            <td><i class="fab fa-adobe fa-3x" title="Adobe Creative Cloud"></i></td>
-                        </tr>
-                    </table>    
-                </section>
+                    </section>
+
+                    <section id="skill">
+                        <h2>Skill</h2>
+                        <h3>Programming language Skill</h3>
+                        <table>
+                            <tr>
+                                <td><i class="fab fa-python fa-3x" title="Python"></i></td>
+                                <td><i class="fab fa-html5 fa-3x" title="HTML5"></i></td>
+                                <td><i class="fab fa-css3-alt fa-3x" title="CSS3"></i></td>
+                                <td><i class="fab fa-java fa-3x" title="Java"></i></td>
+                            </tr>
+                        </table>
+                        <h3>System</h3>
+                        <table>
+                            <tr>
+                                <td><i class="fab fa-ubuntu fa-3x" title="Ubuntu"></i></td>
+                                <td><i class="fab fa-windows fa-3x" title="Windows"></i></td>
+                                <td><i class="fab fa-apple fa-3x" title="macOS"></i></td>
+                            </tr>
+                        </table>
+        
+                        <h3>Application</h3>
+                        <table>
+                            <tr>
+                                <td><i class="fab fa-wordpress fa-3x" title="WordPress"></i></td>
+                                <td><i class="fab fa-adobe fa-3x" title="Adobe Creative Cloud"></i></td>
+                            </tr>
+                        </table>    
+                    </section>
+
+                </main>
             </div>    
         </div>
         <footer class="ftStyle">
-            <ul class="nav">
-                <li>
+            <div class="row">
+                <div class="col-md-12 col-xl-auto">
                     <a class="ft" href="https://www.samduan.cn/termscondiction/copyright/">Copyright © 2020 Liwen Duan</a>
-                </li>
-                <li>
+                </div>
+                <div class="col-md-12 col-xl-auto">
                     <a class="ft" href="https://www.samduan.cn/termscondiction/">Terms & Condition</a>
-                </li>
-                <li>
+                </div>    
+                <div class="col-md-12 col-xl-auto">
                     <a class="ft" href="https://www.samduan.cn/contact/">Contact us</a>
-                </li>
-                <li>
+                </div>    
+                <div class="col-md-12 col-xl-auto">
                     <a class="ft" href="http://www.beian.miit.gov.cn/">鄂ICP备18006410号-1 <i class="fas fa-external-link-alt"></i></a>
-                </li>
-                <li>
-                    <a class="ft" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011202001176"><img src="/img/备案图标.png" alt="网安备案图标"> 京公网安备 11011202001176号 <i class="fas fa-external-link-alt"></i></a>
-                </li>
-            </ul>
+                </div>    
+                <div class="col-md-12 col-xl-auto">
+                    <a class="ft" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011202001176"><img src="/img/备案图标.png" alt="网安备案图标">京公网安备11011202001176号<i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
         </footer>    
 </body>
 </html>

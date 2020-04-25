@@ -1,4 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+SC|Noto+Serif|Noto+Serif+SC&display=swap');
+@font-face {
+    font-family: "ShermanSerif";
+    src: url("https://assets.syracuse.edu/fonts/shermanserif-book.woff2") format("woff2"),
+     url("https://assets.syracuse.edu/fonts/shermanserif-book.woff") format("woff"),
+     url("https://assets.syracuse.edu/fonts/shermanserif-book.eot") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+0020-007F, U+00A9, U+00AE, U+2013-201D;
+}
+@font-face {
+    font-family: "ShermanSerif";
+    src: url("https://assets.syracuse.edu/fonts/shermanserif-book-intl.woff2") format("woff2"),
+     url("https://assets.syracuse.edu/fonts/shermanserif-book-intl.woff") format("woff"),
+     url("https://assets.syracuse.edu/fonts/shermanserif-book-intl.eot") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    unicode-range: U+00A0-00A8, U+00C0-024F, U+201E-2026;
+   }
+
+body {
+    background-color: #f5f5f5 ;
+}
+
+.margin{
+    margin: 1em 1.5em 1em;
+}
+
+span.date {
+    float: right;
+}
+
+.syracuse {
+    font-family: ShermanSerif, Georgia, serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #f76900;
+}
 
 .position-relative {
     position: relative;
@@ -14,7 +53,6 @@
 
 .background-white {
     background-color: #ffffff;
-    margin: 1em;
 }
 
 .center {
@@ -54,15 +92,11 @@ h1.index{
 h2 {
     font-family: 'Noto Serif SC', 'Noto Serif', serif;
     font-weight: bold;
-    margin-top: -80px;
-    padding-top: 80px;
 }
 
 h3 {
     font-family: 'Noto Serif SC', 'Noto Serif', serif;
     font-weight: bold;
-    margin-top: -80px;
-    padding-top: 80px;
 }
 
 .left-indent {
@@ -171,7 +205,6 @@ a.ft{
     text-decoration: none;
     color: #fff;
     text-align: center;
-    margin: 1em;
 }
 
 a.nostyle{
@@ -215,8 +248,8 @@ td.service-icon{
     top: 0%;
 }
 
-.top-10 {
-    top: 10%;
+.top-2 {
+    top: 2%;
 }
 
 ul.nostyle {
